@@ -4,7 +4,7 @@ import random as rand
 import numpy as np
 import pygame as pg
 
-import Physics.Vector as V
+import Vector as V
 
 class Obj:
 	def __init__(self, pos=(0, 0), color=(0, 0, 0)):
@@ -652,7 +652,7 @@ class Environ:
 
 
 
-if __name__ == '__main__':
+if __name__ != '__main__':
 	import time
 	env = Environ()
 	poly = Polygon([(86, 87), (216, 84), (299, 86), (425, 111), (440, 128), (479, 199), (479, 234), (476, 284), (444, 350),
@@ -663,4 +663,6 @@ if __name__ == '__main__':
 	time0 = time.perf_counter()
 	env.ray_poly_Distance(V.Vector(10,200),np.pi*3.4,poly)
 	print(time.perf_counter()-time0)
+
 	# env.show()
+env =Environ()

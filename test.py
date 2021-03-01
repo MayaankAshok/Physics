@@ -1,5 +1,5 @@
 
-import Physics.Vector as V
+import .Vector as V
 
 class Obj:
 	def __init__(self, pos=(0, 0), color=(0, 0, 0)):
